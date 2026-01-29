@@ -30,14 +30,13 @@ export default function LandingPage() {
         <NavbarLayoutFloatingOverlay
           brandName="Bee Job"
           navItems={[
-            { name: "Home", id: "hero" },
-            { name: "Products", id: "products" },
-            { name: "About", id: "about" },
-            { name: "Testimonials", id: "testimonials" },
+            { name: "Home", id: "/" },
+            { name: "Products", id: "/products" },
+            { name: "Pricing", id: "/pricing" },
             { name: "Contact", id: "contact" },
           ]}
           button={{
-            text: "Order Now",            href: "#products"
+            text: "Order Now",            href: "/products"
           }}
         />
       </div>
@@ -49,8 +48,8 @@ export default function LandingPage() {
           tag="Premium Flowers"
           tagIcon={Sparkles}
           buttons={[
-            { text: "Shop Now", href: "#products" },
-            { text: "Learn More", href: "#about" },
+            { text: "Shop Now", href: "/products" },
+            { text: "View Pricing", href: "/pricing" },
           ]}
           carouselItems={[
             {
@@ -104,7 +103,7 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground="noInvert"
           buttons={[
-            { text: "View All Collections", href: "#products" },
+            { text: "View All Collections", href: "/products" },
           ]}
         />
       </div>
@@ -172,50 +171,6 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground="invertDefault"
           speed={40}
-        />
-      </div>
-
-      <div id="pricing" data-section="pricing">
-        <PricingCardTwo
-          title="Flexible Plans for Every Occasion"
-          description="Choose the perfect arrangement package for your special moment"
-          tag="Pricing"
-          plans={[
-            {
-              id: "1",              badge: "Classic Arrangement",              badgeIcon: Leaf,
-              price: "$49.99",              subtitle: "Perfect for birthdays and celebrations",              buttons: [
-                { text: "Choose Plan" },
-                { text: "Customize" },
-              ],
-              features: [
-                "6-8 stems of premium flowers",                "Elegant vase included",                "Standard delivery available",                "Free greeting card"
-              ],
-            },
-            {
-              id: "2",              badge: "Premium Bouquet",              badgeIcon: Sparkles,
-              price: "$84.99",              subtitle: "Best for romantic occasions",              buttons: [
-                { text: "Choose Plan" },
-                { text: "Customize" },
-              ],
-              features: [
-                "12-15 stems of luxury flowers",                "Premium decorative vase",                "Same-day delivery included",                "Personalized message card",                "Complimentary ribbon wrap"
-              ],
-            },
-            {
-              id: "3",              badge: "Grand Celebration",              badgeIcon: Heart,
-              price: "$149.99",              subtitle: "For unforgettable moments",              buttons: [
-                { text: "Choose Plan" },
-                { text: "Customize" },
-              ],
-              features: [
-                "20+ stems of exotic varieties",                "Designer luxury arrangement",                "Priority same-day delivery",                "Bespoke consultation included",                "Premium packaging",                "Flower care guide provided"
-              ],
-            },
-          ]}
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground="noInvert"
-          carouselMode="buttons"
         />
       </div>
 
