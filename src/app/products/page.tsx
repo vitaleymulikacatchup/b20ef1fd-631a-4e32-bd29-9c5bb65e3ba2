@@ -83,7 +83,6 @@ export default function ProductsPage() {
             tagIcon={Leaf}
             products={allProducts}
             gridVariant="three-columns-all-equal-width"
-            carouselMode="buttons"
             animationType="slide-up"
             textboxLayout="default"
             useInvertedBackground="noInvert"

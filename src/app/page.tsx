@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -7,7 +7,7 @@ import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import AboutMetric from '@/components/sections/about/AboutMetric';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import { Sparkles, Leaf, Heart, Truck, Award } from 'lucide-react';
@@ -98,7 +98,6 @@ export default function LandingPage() {
             },
           ]}
           gridVariant="uniform-all-items-equal"
-          carouselMode="buttons"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground="noInvert"

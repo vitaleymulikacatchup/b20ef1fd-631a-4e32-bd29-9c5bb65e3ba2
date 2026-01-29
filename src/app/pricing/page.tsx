@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import { Sparkles, Leaf, Heart } from 'lucide-react';
 
@@ -37,14 +37,14 @@ export default function PricingPage() {
         </div>
 
         <div id="pricing" data-section="pricing">
-          <PricingCardTwo
+          <PricingCardThree
             title="Flexible Plans for Every Occasion"
             description="Choose the perfect arrangement package for your special moment. All plans include free greeting card and careful delivery."
             tag="Pricing"
             plans={[
               {
                 id: "1",                badge: "Classic Arrangement",                badgeIcon: Leaf,
-                price: "$49.99",                subtitle: "Perfect for birthdays and celebrations",                buttons: [
+                price: "$49.99",                name: "Perfect for birthdays and celebrations",                buttons: [
                   { text: "Choose Plan", href: "/products" },
                   { text: "Customize", href: "/products" },
                 ],
@@ -54,7 +54,7 @@ export default function PricingPage() {
               },
               {
                 id: "2",                badge: "Premium Bouquet",                badgeIcon: Sparkles,
-                price: "$84.99",                subtitle: "Best for romantic occasions",                buttons: [
+                price: "$84.99",                name: "Best for romantic occasions",                buttons: [
                   { text: "Choose Plan", href: "/products" },
                   { text: "Customize", href: "/products" },
                 ],
@@ -64,7 +64,7 @@ export default function PricingPage() {
               },
               {
                 id: "3",                badge: "Grand Celebration",                badgeIcon: Heart,
-                price: "$149.99",                subtitle: "For unforgettable moments",                buttons: [
+                price: "$149.99",                name: "For unforgettable moments",                buttons: [
                   { text: "Choose Plan", href: "/products" },
                   { text: "Customize", href: "/products" },
                 ],
@@ -73,7 +73,7 @@ export default function PricingPage() {
                 ],
               },
               {
-                id: "4",                price: "$199.99",                subtitle: "For corporate events and weddings",                buttons: [
+                id: "4",                price: "$199.99",                name: "For corporate events and weddings",                buttons: [
                   { text: "Contact Us", href: "contact" },
                   { text: "Learn More", href: "/pricing" },
                 ],
@@ -85,7 +85,6 @@ export default function PricingPage() {
             animationType="slide-up"
             textboxLayout="default"
             useInvertedBackground="noInvert"
-            carouselMode="buttons"
           />
         </div>
 
