@@ -66,8 +66,7 @@ export default function ProductsPage() {
             navItems={[
               { name: "Home", id: "/" },
               { name: "Products", id: "/products" },
-              { name: "About", id: "about" },
-              { name: "Testimonials", id: "testimonials" },
+              { name: "Pricing", id: "/pricing" },
               { name: "Contact", id: "contact" },
             ]}
             button={{
