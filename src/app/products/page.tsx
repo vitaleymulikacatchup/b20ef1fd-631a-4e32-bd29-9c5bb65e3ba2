@@ -67,7 +67,7 @@ export default function ProductsPage() {
               { name: "Home", id: "/" },
               { name: "Products", id: "/products" },
               { name: "Pricing", id: "/pricing" },
-              { name: "Contact", id: "contact" },
+              { name: "Contact", id: "/contact" },
             ]}
             button={{
               text: "Order Now",              href: "/products"

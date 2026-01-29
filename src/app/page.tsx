@@ -8,7 +8,6 @@ import AboutMetric from '@/components/sections/about/AboutMetric';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import { Sparkles, Leaf, Heart, Truck, Award } from 'lucide-react';
 
@@ -33,7 +32,7 @@ export default function LandingPage() {
             { name: "Home", id: "/" },
             { name: "Products", id: "/products" },
             { name: "Pricing", id: "/pricing" },
-            { name: "Contact", id: "contact" },
+            { name: "Contact", id: "/contact" },
           ]}
           button={{
             text: "Order Now",            href: "/products"
@@ -173,18 +172,43 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="contact" data-section="contact">
-        <ContactSplit
-          tag="Get In Touch"
-          title="Ready to Order Your Flowers?"
+      <div id="pricing" data-section="pricing">
+        <PricingCardThree
+          title="Ready to Transform Your Occasions?"
           description="Subscribe to our newsletter for exclusive deals, new arrivals, and floral care tips delivered right to your inbox."
-          useInvertedBackground="invertDefault"
-          imageSrc="https://img.b2bpic.net/free-photo/day-beauti-flowers-flower-white_1303-2012.jpg"
-          imageAlt="Gorgeous flower arrangement in a gift box"
-          mediaPosition="right"
-          inputPlaceholder="Enter your email address"
-          buttonText="Subscribe"
-          termsText="We respect your privacy. Unsubscribe anytime from our mailing list."
+          tag="Pricing & Offers"
+          plans={[
+            {
+              id: "1",              badge: "Classic Arrangement",              badgeIcon: Leaf,
+              price: "$49.99",              name: "Perfect for birthdays and celebrations",              buttons: [
+                { text: "Choose Plan", href: "/products" },
+              ],
+              features: [
+                "6-8 stems of premium flowers",                "Elegant vase included",                "Standard delivery available",                "Free greeting card"
+              ],
+            },
+            {
+              id: "2",              badge: "Premium Bouquet",              badgeIcon: Sparkles,
+              price: "$84.99",              name: "Best for romantic occasions",              buttons: [
+                { text: "Choose Plan", href: "/products" },
+              ],
+              features: [
+                "12-15 stems of luxury flowers",                "Premium decorative vase",                "Same-day delivery included",                "Personalized message card",                "Complimentary ribbon wrap"
+              ],
+            },
+            {
+              id: "3",              badge: "Grand Celebration",              badgeIcon: Heart,
+              price: "$149.99",              name: "For unforgettable moments",              buttons: [
+                { text: "Choose Plan", href: "/products" },
+              ],
+              features: [
+                "20+ stems of exotic varieties",                "Designer luxury arrangement",                "Priority same-day delivery",                "Bespoke consultation included",                "Premium packaging",                "Flower care guide provided"
+              ],
+            },
+          ]}
+          animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground="noInvert"
         />
       </div>
 
