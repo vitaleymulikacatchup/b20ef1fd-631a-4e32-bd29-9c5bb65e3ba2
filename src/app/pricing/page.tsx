@@ -28,7 +28,7 @@ export default function PricingPage() {
               { name: "Home", id: "/" },
               { name: "Products", id: "/products" },
               { name: "Pricing", id: "/pricing" },
-              { name: "Contact", id: "contact" },
+              { name: "Contact", id: "/contact" },
             ]}
             button={{
               text: "Order Now",              href: "/products"
@@ -74,7 +74,7 @@ export default function PricingPage() {
               },
               {
                 id: "4",                price: "$199.99",                name: "For corporate events and weddings",                buttons: [
-                  { text: "Contact Us", href: "contact" },
+                  { text: "Contact Us", href: "/contact" },
                   { text: "Learn More", href: "/pricing" },
                 ],
                 features: [
